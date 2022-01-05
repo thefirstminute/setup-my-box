@@ -11,7 +11,7 @@ while IFS= read -r line ; do
   packs+=" $line"
 done < <(grep -v '#' pkgs_apt)
 # FIXME: UNCOMMENT V
-#apt install -y $packs
+apt install -y $packs
 echo ""
 
 echo "₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪"

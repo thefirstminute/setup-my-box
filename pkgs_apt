@@ -31,7 +31,6 @@ mpv
 nodejs
 numlockx
 onionshare
-opera-stable
 pass
 python3
 python3-bs4
@@ -46,6 +45,7 @@ python3-lxml
 python3-html5lib
 redshift
 rig
+ripgrep
 rofi
 silversearcher-ag
 simplescreenrecorder

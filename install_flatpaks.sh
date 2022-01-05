@@ -7,7 +7,6 @@ while IFS= read -r line ; do
   echo "install $line"
   packs+=" $line"
 done < <(grep -v '#' pkgs_flathub)
-# FIXME: UNCOMMENT V
-#flatpak install flathub $packs
+flatpak install flathub $packs
 echo ""
 echo "₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪"
