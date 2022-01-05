@@ -1,0 +1,270 @@
+[/]
+alttab-minimized-aware=true
+alttab-switcher-delay=400
+alttab-switcher-enforce-primary-monitor=true
+alttab-switcher-style='icons+preview'
+app-menu-label=''
+desktop-effects-close-effect='traditional'
+desktop-effects-close-time=120
+desktop-effects-close-transition='easeOutQuad'
+desktop-effects-map-effect='traditional'
+desktop-effects-map-time=100
+desktop-effects-map-transition='easeOutQuad'
+desktop-effects-maximize-effect='none'
+desktop-effects-maximize-time=100
+desktop-effects-maximize-transition='easeInExpo'
+desktop-effects-minimize-effect='traditional'
+desktop-effects-minimize-time=160
+desktop-effects-minimize-transition='easeInQuad'
+desktop-effects-on-dialogs=false
+desktop-effects-on-menus=false
+desktop-effects-tile-effect='none'
+desktop-effects-tile-time=100
+desktop-effects-tile-transition='easeInQuad'
+desktop-effects-unmaximize-effect='none'
+desktop-effects-unmaximize-time=100
+desktop-effects-unmaximize-transition='easeNone'
+enable-vfade=false
+enabled-applets=['panel1:left:0:menu@cinnamon.org:120', 'panel1:right:13:systray@cinnamon.org:123', 'panel1:right:17:xapp-status@cinnamon.org:124', 'panel1:right:20:notifications@cinnamon.org:125', 'panel1:right:22:printers@cinnamon.org:126', 'panel1:right:16:removable-drives@cinnamon.org:127', 'panel1:right:23:network@cinnamon.org:130', 'panel1:right:14:sound@cinnamon.org:131', 'panel2:right:5:power@cinnamon.org:132', 'panel2:left:0:calendar@cinnamon.org:133', 'panel1:right:21:inhibit@cinnamon.org:135', 'panel2:right:4:workspace-switcher@cinnamon.org:139', 'panel2:left:2:window-list@cinnamon.org:140', 'panel2:left:1:spacer@cinnamon.org:142', 'panel2:right:2:expo@cinnamon.org:143', 'panel2:right:1:scale@cinnamon.org:145', 'panel2:right:3:windows-quick-list@cinnamon.org:149', 'panel2:right:0:on-screen-keyboard@cinnamon.org:150', 'panel1:left:2:grouped-window-list@cinnamon.org:151']
+favorite-apps=['firefox.desktop', 'mintinstall.desktop', 'cinnamon-settings.desktop', 'org.gnome.Terminal.desktop', 'nemo.desktop', 'brave-browser.desktop']
+hotcorner-layout=['expo:false:0', 'expo:true:0', 'desktop:true:0', 'scale:true:0']
+next-applet-id=152
+panel-edit-mode=false
+panel-launchers=['DEPRECATED']
+panel-zone-icon-sizes='[{"panelId": 1, "left": 0, "center": 0, "right": 0}, {"left": 0, "center": -1, "right": -1, "panelId": 2}]'
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 18, "center": 22, "right": 16}, {"left": 16, "center": 18, "right": 16, "panelId": 2}]'
+panel-zone-text-sizes='[{"panelId": 1, "left": 0, "center": 0, "right": 10}, {"left": 0, "center": 0, "right": 7.5, "panelId": 2}]'
+panels-autohide=['1:false', '2:false']
+panels-enabled=['1:0:left', '2:0:top']
+panels-height=['1:30', '2:20']
+panels-hide-delay=['1:0', '2:0']
+panels-show-delay=['1:0', '2:0']
+startup-animation=false
+
+[cinnamon-session]
+quit-delay-toggle=true
+quit-time-delay=22
+
+[control-center/display]
+show-fractional-scaling-controls=false
+
+[desktop/a11y/applications]
+screen-keyboard-enabled=true
+
+[desktop/applications/calculator]
+exec='gnome-calculator'
+
+[desktop/applications/terminal]
+exec='kitty'
+
+[desktop/background]
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/linuxmint-uma/iquesada_abstract.jpg'
+
+[desktop/background/slideshow]
+delay=15
+image-source='directory:///home/jrk/Pictures'
+
+[desktop/interface]
+cursor-blink-time=1200
+cursor-size=12
+font-name='Hack 11'
+gtk-overlay-scrollbars=true
+gtk-theme='Mint-Y-Dark'
+icon-theme='Mint-Y-Dark'
+scaling-factor=uint32 0
+text-scaling-factor=1.0
+toolkit-accessibility=true
+
+[desktop/keybindings]
+custom-list=['__dummy__', 'custom0']
+looking-glass-keybinding=@as []
+show-desklets=@as []
+
+[desktop/keybindings/custom-keybindings/custom0]
+binding=['<Primary><Alt><Super>q']
+command='/home/jrk/.config/mybin/close-all-windows-workspace.sh'
+name='close all on workspace'
+
+[desktop/keybindings/media-keys]
+area-screenshot=['<Shift>Print']
+battery=['XF86Battery', '<Primary><Alt>p']
+calculator=['XF86Calculator', 'Explorer', '<Alt><Super>c']
+decrease-text-size=['<Primary><Alt>minus']
+help=@as []
+hibernate=['XF86Suspend', '<Primary><Alt>h']
+home=@as []
+increase-text-size=['<Primary><Alt>equal']
+logout=['<Primary><Alt>l']
+mic-mute=['XF86AudioMicMute', '<Primary><Alt>m']
+restart-cinnamon=['<Control><Alt>Escape', '<Primary><Alt>r']
+screen-brightness-down=['XF86MonBrightnessDown', '<Primary><Alt>Left']
+screen-brightness-up=['XF86MonBrightnessUp', '<Primary><Alt>Right']
+screensaver=['<Primary><Alt>k', 'XF86ScreenSaver']
+search=@as []
+suspend=['XF86Sleep', '<Primary><Alt>s']
+terminal=['<Super>Return']
+touchpad-toggle=['XF86TouchpadToggle', 'LaunchA', '<Primary><Alt>t']
+video-outputs=['XF86Display', '<Primary><Alt>d']
+video-rotation=['<Primary><Alt><Super>o']
+video-rotation-lock=['<Primary><Alt>o']
+volume-down=['XF86AudioLowerVolume', '<Primary><Alt>Down']
+volume-mute=['XF86AudioMute', '<Primary><Alt>v']
+volume-up=['XF86AudioRaiseVolume', '<Primary><Alt>Up']
+www=['XF86WWW', '<Alt><Super>b']
+
+[desktop/keybindings/wm]
+begin-move=['<Alt>F7', '<Shift><Super>g']
+begin-resize=['<Alt>F8', '<Shift><Super>r']
+close=['<Alt>F4', '<Super>q']
+lower=@as []
+maximize-vertically=['<Shift><Super>v']
+minimize=['<Super>minus']
+move-to-center=['<Shift><Super>s']
+move-to-corner-ne=['<Shift><Super>e']
+move-to-corner-nw=['<Shift><Super>q']
+move-to-corner-se=['<Shift><Super>c']
+move-to-corner-sw=['<Shift><Super>z']
+move-to-side-e=['<Shift><Super>d']
+move-to-side-n=['<Shift><Super>w']
+move-to-side-s=['<Shift><Super>x']
+move-to-side-w=['<Shift><Super>a']
+move-to-workspace-1=['<Shift><Super>y']
+move-to-workspace-2=['<Shift><Super>u']
+move-to-workspace-3=['<Shift><Super>i']
+move-to-workspace-4=['<Shift><Super>o']
+move-to-workspace-5=['<Shift><Super>p']
+move-to-workspace-6=['<Shift><Super>braceleft']
+move-to-workspace-7=['<Shift><Super>braceright']
+move-to-workspace-8=['<Shift><Super>colon']
+move-to-workspace-9=['<Shift><Super>quotedbl']
+move-to-workspace-new=['<Shift><Super>Insert']
+panel-run-dialog=['<Alt>F2', 'Search']
+push-snap-down=['<Control><Super>Down', '<Shift><Super>j']
+push-snap-left=['<Control><Super>Left', '<Shift><Super>h']
+push-snap-right=['<Control><Super>Right', '<Shift><Super>l']
+push-snap-up=['<Control><Super>Up', '<Shift><Super>k']
+push-tile-down=['<Super>Down']
+push-tile-left=['<Super>Left']
+push-tile-right=['<Super>Right']
+push-tile-up=['<Super>Up']
+switch-group=['<Super>Tab']
+switch-to-workspace-1=['<Super>y']
+switch-to-workspace-2=['<Super>u']
+switch-to-workspace-3=['<Super>i']
+switch-to-workspace-4=['<Super>o']
+switch-to-workspace-5=['<Super>p']
+switch-to-workspace-6=['<Super>bracketleft']
+switch-to-workspace-7=['<Super>bracketright']
+switch-to-workspace-8=['<Super>semicolon']
+switch-to-workspace-9=['<Super>apostrophe']
+switch-to-workspace-down=@as []
+switch-to-workspace-left=@as []
+switch-to-workspace-right=@as []
+switch-to-workspace-up=@as []
+toggle-above=['<Shift><Super>t']
+toggle-fullscreen=['<Shift><Super>f']
+toggle-maximized=['<Alt>F10', '<Super>equal']
+toggle-on-all-workspaces=['<Shift><Super>b']
+
+[desktop/media-handling]
+automount-open=false
+autorun-never=false
+autorun-x-content-ignore=@as []
+autorun-x-content-open-folder=@as []
+autorun-x-content-start-app=@as []
+
+[desktop/screensaver]
+default-message='What Is The Single Most Important Thing You Can Do Right Now?'
+font-date='Lato Heavy Italic 24'
+font-time='Lato Semi-Bold 64'
+lock-enabled=false
+use-custom-format=true
+
+[desktop/session]
+idle-delay=uint32 2700
+
+[desktop/sound]
+event-sounds=false
+maximum-volume=150
+
+[desktop/wm/preferences]
+action-middle-click-titlebar='toggle-stuck'
+action-right-click-titlebar='toggle-above'
+action-scroll-titlebar='opacity'
+button-layout=':minimize,maximize,close'
+min-window-opacity=14
+mouse-button-modifier='<Super>'
+num-workspaces=9
+theme='Mint-Y-Dark'
+titlebar-font='Hack Bold 10'
+workspace-names=['y', 'u', 'i', 'o', 'p', '[', ']', ';', "'"]
+
+[launcher]
+check-frequency=300
+memory-limit=2048
+
+[muffin]
+desktop-effects=false
+resize-threshold=46
+snap-modifier='Shift'
+tile-hud-threshold=70
+unredirect-fullscreen-windows=true
+workspace-cycle=true
+
+[settings-daemon/peripherals/keyboard]
+delay=uint32 500
+numlock-state='on'
+repeat-interval=uint32 30
+
+[settings-daemon/peripherals/mouse]
+custom-acceleration=true
+custom-threshold=true
+double-click=400
+drag-threshold=10
+left-handed=false
+motion-acceleration=3.5403225806451615
+motion-threshold=6
+
+[settings-daemon/peripherals/touchpad]
+clickpad-click=2
+custom-acceleration=false
+custom-threshold=false
+disable-while-typing=false
+disable-with-external-mouse=false
+horizontal-scrolling=false
+motion-acceleration=5.772177419354839
+motion-threshold=1
+tap-to-click=true
+touchpad-enabled=true
+
+[settings-daemon/peripherals/touchscreen]
+orientation-lock=true
+
+[settings-daemon/peripherals/wacom/dafd9a61376b4676aa8b190bc1ed4b43-usb:056a:00ec/0xfffff]
+buttonmapping=[1, 3, 7, 0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+pressurecurve=[0, 25, 75, 100]
+
+[settings-daemon/plugins/power]
+idle-brightness=10
+idle-dim-battery=false
+lid-close-ac-action='nothing'
+lid-close-battery-action='suspend'
+lock-on-suspend=false
+sleep-display-ac=3600
+sleep-display-battery=300
+sleep-inactive-ac-timeout=0
+sleep-inactive-battery-timeout=1800
+
+[settings-daemon/plugins/xsettings]
+hinting='slight'
+
+[sounds]
+login-enabled=false
+logout-enabled=false
+plug-enabled=true
+switch-enabled=false
+tile-enabled=false
+
+[theme]
+name='Mint-Y-Dark'
