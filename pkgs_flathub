@@ -4,5 +4,5 @@ com.spotify.Client
 io.freetubeapp.FreeTube
 org.telegram.desktop
 io.gitlab.librewolf-community
-/* ch.openboard.OpenBoard */
+# ch.openboard.OpenBoard
 com.github.philip_scott.spice-up
