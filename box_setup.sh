@@ -1,14 +1,26 @@
 #!/bin/bash
 
 ## Initial vars, reqs, logics and funcs {{{
-if [ "$(id -u)" = 0 ]; then
-    echo "don't do this as root"
-    exit 1
-fi
+
+## could probably make this echo out errors at the end...
+warn() { \
+  echo
+  echo "₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪"
+  echo "₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪"
+  echo "₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪ A BAD THING HERE ₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪"
+  echo
+  echo
+  printf "%s" "$1" >&2;
+  echo
+  echo
+  echo "₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪"
+  echo "₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪"
+  echo "₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪"
+  echo
+}
 
 error() { \
   echo
-  echo "₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪"
   echo "₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪"
   echo
   echo "Awe, You're not in the 3.6%"
@@ -16,19 +28,14 @@ error() { \
   echo
   echo
   echo "₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪"
-  echo "₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪"
   echo
   exit 1;
 }
 
-dodis() { \
-  dialog \
-  --title "Are You Sure You Want To Do This?"\
-  --yes-label "Roll The Dice"\
-  --no-label "Play It Safe"\
-  --yesno "We've got about a 3.6% chance of this thing working right..." 8 40  || error "Chicken Shit"
-}
-dodis || error "exited"
+if [ "$(id -u)" = 0 ]; then
+    error "don't do this as root"
+fi
+
 clear
 echo "₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪"
 
@@ -46,8 +53,11 @@ source install_aptpacks.sh
 source install_flatpaks.sh
 source install_pythons.sh
 source install_entr.sh
-source install_xampp.sh
+# using 'proper' LAMP now...
+# source install_xampp.sh
+source install_lamp.sh # this has not actually been run/tested yet
 source install_neovim.sh
+source setup_dirs_end.sh
 source cinnamon_desktop_dconf.sh
 
 echo "                            DONE"
